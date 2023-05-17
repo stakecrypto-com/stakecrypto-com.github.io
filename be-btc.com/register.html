@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BEBTC | Register</title>
+    <link href="css/bs_min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery_min.js"></script>
+    <script src="js/bs_min.js"></script>
+    <link href="layui/css/layui.css" rel="stylesheet" type="text/css">
+    <script src="layui/layui.all.js"></script>
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+        .pages a,
+			.pages span {
+				display: inline-block;
+				padding: 2px 5px;
+				margin: 0 1px;
+				border: 1px solid #f0f0f0;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+			
+			.pages a,
+			.pages li {
+				display: inline-block;
+				list-style: none;
+				text-decoration: none;
+				color: #58A0D3;
+			}
+			
+			.pages a.first,
+			.pages a.prev,
+			.pages a.next,
+			.pages a.end {
+				margin: 0;
+			}
+			
+			.pages a:hover {
+				border-color: #50A8E6;
+			}
+			
+			.pages span.current {
+				background: #50A8E6;
+				color: #FFF;
+				font-weight: 700;
+				border-color: #50A8E6;
+			}
+			textarea{
+			    resize: none;
+			}
+    </style>
+    <script>
+        window.onload = function(){
+            $('input').attr('autocomplete','off')
+        }
+    </script>
+    <title></title>
+  </head>
+  <style>
+        body{
+              background-color: #ededed;
+        }
+        body,html{
+              background-color: #ededed;
+              padding: 0;
+              margin: 0;
+        }
+        h1,h2,h3,h4,h5,h6,h7{margin:0;padding:0}
+        .headerBox{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 80px;
+            background-color: #7670d9;
+            display: flex;
+            z-index: 99;
+        }
+        .logolefttop{
+            width: 250px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-left-Box{
+            width: 250px;
+            height: calc(100vh - 80px);
+            background-color: #fff;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            z-index: 99;
+        }
+        .bodyBox{
+            width: 100%;
+            height: calc(100vh - 80px);
+            background-color: #ededed;
+            position: fixed;
+            top: 80px;
+            right: 0;
+            z-index: 1;
+            overflow-y: auto;
+        }
+        .daohangHeader{
+            width: 190px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 60px;
+            color: #8891b9;
+            font-size: 20px;
+        }
+        .nav-left-Box-List{
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 60px;
+            font-size: 14px;
+            color: #6046ff;
+            -webkit-filter:grayscale(80%);
+            filter:grayscale(80%);
+            cursor: pointer;
+        }
+        .nav-left-Box-List:hover{
+            background-color: #f6f7fb;
+        }
+        .nav-left-Box-List.active{
+            -webkit-filter:grayscale(0%);
+            filter:grayscale(0%);
+            background-color: #f6f7fb;
+        }
+        .headerTouxiangBox{
+            width: calc(100% - 250px - 250px);
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+        }
+        .touxiang{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .vipBox{
+            width: 125px;
+            height: 50px;
+            border-radius: 12px;
+            background-color: #ededed;
+            display: flex;
+            align-items: center;
+        }
+        .vipimg{
+            height: 40px;
+            margin-right: 5px;
+        }
+        .header-right-Box{
+            width: 250px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #fff;
+            padding: 0 30px;
+        }
+        .header-right-Box div{
+            width: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-right-Box div img{
+            height: 18px;
+            margin: 0 10px;
+        }
+        .header-right-Box div a{
+            color: #fff;
+        }
+        .vipmobil{
+            display: none;
+        }
+        .right-mobb{
+            display: none;
+            color: #fff;
+        }
+        .menumenu{
+            display: none;
+        }
+        .zhezhaoBox{display:none}
+        .bodyBox iframe{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+        .loginBox{
+            width: 750px;
+            background-color: #fff;
+            padding: 50px 80px 20px 80px;
+            margin: 40px auto;
+            border-radius: 10px;
+        }
+        .tfrow{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            justify-content: space-between;
+        }
+        .label{
+            width: 20%;
+            color: #333;
+            flex-shrink: 0;
+            font-size: 14px;
+            text-align: left;
+            font-weight: normal;
+        }
+        .tfrow input{
+            outline: none;
+            width: calc(70% - 10px);
+            border: none;
+            border-bottom:0.5px solid #999;
+            padding-left: 10px;
+            flex-shrink: 0;
+            outline: none;
+        }
+        .dldl{
+            width: 100%;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            background-color: #7670d9;
+            border: none;
+            border-radius: 500px;
+            margin-top: 20px;
+            outline: none;
+        }
+        a{
+            color: #333;
+            font-size: 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        a:hover{
+            color: #333;
+        }
+        .tfrow img{
+            width: 24%;
+            height: 40px;
+        }
+        /*移动端样式*/
+      @media only screen and (max-width: 600px) {
+        .logolefttop img{
+            height: 5vw;
+        }
+        .logolefttop{
+            height: 13vw;
+            width: auto;
+            padding: 0 3vw;
+        }
+        .headerTouxiangBox{
+            flex: 1;
+        }
+        .headerBox{
+            height: 13vw;
+        }
+        .header-right-Box{
+            display: none;
+        }
+        .vipBox{
+            display: none;
+        }
+        .headerTouxiangBox{
+            height: 13vw;
+        }
+        .vipmobil{
+            display: block;
+            color: #fff;
+        }
+        .right-mobb{
+            display: block;
+            color: #fff;
+            line-height: 13vw;
+            padding: 0 10px;
+        }
+        .nav-left-Box {
+            width: 250px;
+            height: calc(100vh - 13vw);
+            background-color: #fff;
+            position: fixed;
+            top: 13vw;
+            left: 0;
+        }
+        .menumenu{
+            display: block;
+            height: 5vw;
+            margin: 0 2vw;
+        }
+        .nav-left-Box{
+            left: -250px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .nav-left-Box.active{
+            left: 0px;
+        }
+        .headerTouxiangBox{
+            padding-left: 2vw;
+        }
+        .nameBox{
+            padding: 0 2vw !important;
+        }
+        .touxiang{
+            width: 8vw;
+            height:8vw;
+        }
+        .zhezhaoBox{
+            display: block;
+            position: fixed;
+            top: 13vw;
+            left: 100vw;
+            width: calc(100% - 250px);
+            height: calc(100vh - 13vw);
+            z-index: 99;
+            opacity: 0;
+            background-color: rgba(0,0,0,.5);
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .zhezhaoBox.active{
+            display: block;
+            position: fixed;
+            top: 13vw;
+            opacity: 1;
+            left: 250px;
+            width: calc(100% - 250px);
+            height: calc(100vh - 13vw);
+            z-index: 99;
+            background-color: rgba(0,0,0,.3);
+        }
+        .bodyBox{
+            width: 100%;
+            height: calc(100vh - 13vw);
+            background-color: #ededed;
+            position: fixed;
+            top: 13vw;
+            right: 0;
+            z-index: 1;
+            overflow-y: auto;
+        }
+        .bodyBox iframe{
+            width: 100%;
+            height: calc(100vh - 13vw);
+        }
+        .loginBox{
+            width: 96%;
+            background-color: #fff;
+            padding: 50px 20px 50px 10px;
+            margin-bottom: 200px;
+            margin-top: 100px;
+        }
+        .input{
+            width: 40%;
+        }
+      }
+  </style>
+  <body>
+    <div class="headerBox">
+        <div class="logolefttop">
+            <img src="image/logolefttop.png"/>
+        </div>
+        <div class="headerTouxiangBox">
+                
+        </div>
+    </div>
+    
+    <div class="bodyBox">
+        <div class="loginBox">
+            <div style="text-align:center; color:red">
+                <p><span >
+                                </span><br /><br />
+            </div>
+            <div class="tfrow">
+                <div class="label">Username:</div>
+                <input type="text" name="nickname" maxlength="12" placeholder="Enter new username" />
+            </div>
+            <div class="tfrow">
+                <div class="label">Email:</div>
+                <input type="text" name="email" maxlength="40" placeholder="For receiving email notifications" />
+            </div>
+            <div class="tfrow">
+                <div class="label">Phone:</div>
+                <input type="number" maxlength="11" name="phone" placeholder="For receiving SMS notifications" />
+            </div>
+            <div class="tfrow">
+                <div class="label">Bitcoin Wallet:</div>
+                <input type="text" name="name" maxlength="50" placeholder="Enter Bitcoin wallet address" />
+            </div>
+
+            <div class="tfrow">
+                <div class="label">Country:</div>
+                    <select id="country" name="country" style="width:225px; height:30px; border-radius:5px">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Bouvet Island">Bouvet Island</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote D'ivoire">Cote D'ivoire</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="French Southern Territories">French Southern Territories</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guernsey">Guernsey</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-bissau">Guinea-bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Isle of Man">Isle of Man</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jersey">Jersey</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                    <option value="Korea, Republic of">Korea, Republic of</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macao">Macao</option>
+                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                    <option value="Moldova, Republic of">Moldova, Republic of</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Pitcairn">Pitcairn</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russian Federation">Russian Federation</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saint Helena">Saint Helena</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Timor-leste">Timor-leste</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Viet Nam">Viet Nam</option>
+                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+            </div>
+            
+            
+                   
+            
+            <div class="tfrow">
+                <div class="label">Password:</div>
+                <input type="password" name="pass1" maxlength="12" placeholder="Create new password" />
+            </div>
+            <div class="tfrow">
+                <div class="label">Confirm:</div>
+                <input type="password" name="pass2" maxlength="12" placeholder="Confirm new password" />
+            </div>
+            <div class="tfrow">
+                <div class="label"><span style="color:#E53333;">New Key</span>:</div>
+                <input type="password" name="pass_1" maxlength="12" placeholder="Create new secure key" />
+            </div>
+            <div class="tfrow">
+                <div class="label"><span style="color:#E53333;">Confirm</span>:</div>
+                <input type="password" name="pass_2" maxlength="12" placeholder="Confirm new secure key" />
+            </div>
+                       <div style="text-align:center;">
+	            <span style="color:#E53333">（Withdrawals from your account balance to your Bitcoin wallet address requires your Secure Key. Without your Secure Key, it is only possible to transfer from your balance, to other BEBTC VIP members）</span>
+           </div>
+            <div style="text-align:right;">&nbsp;</div>
+            <div class="tfrow">
+                <div class="label">Captcha::</div>
+                <input type="text" name="code" placeholder="" style="width:30%"/>
+                <img class="codeimg" src="image/rand/gen13.png"/>
+            </div>
+            <div class="tfrow">
+                <button type="button" class="dldl" onclick="denglu(this)">Proceed</button>
+            </div>
+            <div class="tfrow" style="justify-content:center">
+                <a href="login.html">Back to Login</a>
+
+            </div>
+            <div style="text-align:center;"><span style="color:#CC33E5;"><strong>Your Bitcoin wallet address is very important, it will be used for all your withdrawals.</strong><br /> Please fill in the form carefully so that you can withdraw directly from your account balance to your wallet. Filling the wrong wallet address will cause your withdrawals to fail.</span></div><br /><br /><TR />
+                
+        </div>
+    </div>
+    <!-- <script src="/Public/Home/js/Mtils.min.js"></script> -->
+    <script>
+        function denglu(e){
+            var nickname = $('input[name="nickname"]').val();//昵称
+            var email = $('input[name="email"]').val();//邮箱
+            var phone = $('input[name="phone"]').val();//手机号
+            var location = $('#country').val();     // For innerText use $( "#country option:selected" ).text();
+            var plan = $('input[name="vip"]').val();
+            var name = $('input[name="name"]').val();//真实姓名
+            var pass1 = $('input[name="pass1"]').val();//登录密码
+            var pass2 = $('input[name="pass2"]').val();//登录密码2
+            var pass_1 = $('input[name="pass_1"]').val();//支付密码
+            var pass_2 = $('input[name="pass_2"]').val();//支付密码2
+            var code = $('input[name="code"]').val();//验证码
+            if(!nickname){
+                layer.msg('Please fill a username');return;
+            }if(!pass1 || pass1.length < 6 ){
+                layer.msg('Please fill a password (min 6 characters)');return;
+            }if(pass1!=pass2){
+                layer.msg('Passwords do not match');return;
+            }if(!pass_1 || pass_1.length < 6){
+                layer.msg('Please fill a Secure Key (min 6 characters)');return;
+            }if(pass_1 != pass_2){
+                layer.msg('Keys do not match');return;
+            }if(code != 366){
+                layer.msg('Wrong captcha');
+                location.reload();
+                return;
+            }
+            // $(e).attr('disabled','disabled');//提交ajax时禁用按钮
+            $.ajax({
+                type:"POST",
+                url:"/includes/regVerif.php",
+                data:{
+                    name:nickname,
+                    mail:email,
+                    mobile:phone,
+                    wallet:name,
+                    pwd:pass1,
+                    key:pass_1,
+                    country:location,
+                    level:plan
+                },
+                //请求成功
+                success : function(result) 
+                {
+                    if ( 1 == 2 )
+                        window.location.reload();
+                    else
+                        window.location.assign("login.html");
+                    // $(e).removeAttr('disabled');//提交成功时启用按钮
+                }
+            });
+        }
+    </script>
+<!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?353a866ab2e8aa6e4d64074053dac7a1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+  </body>
+</html>
